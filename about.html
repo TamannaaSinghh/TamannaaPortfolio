@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+.tamanna {
+  color: midnightblue;
+}
+
+.main .logo{
+  height: 200px;
+}
+@media(max-width: 680px){
+  .logo{
+    width: 200px;
+  }
+
+  .card{
+    width: 100px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  h1{
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card img{
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
+</style>
+<body>
+    <div class="main">
+        <img class="logo" src="./images/my logo.png" alt="logo">
+        <h1>I am <span class="tamanna">Tamanna Singh</span>,<br> a B.Tech Student!</h1>
+        <div class="left card"><img class="tile-image" src="./images/tamz1.jpeg" alt="my pic">
+          <h2 class="card-title">Education</h2>
+          <p class="card-text">I am an Engineering student and now learning Full Stack WebD. Currently, my 3rd year is going
+            on and I love learning new styles in both ways (on computer and off computer).
+        </div>
+    
+        <div class="right card"><img class="tile-image" src="./images/tamz2.jpeg" alt="pic2">
+          <h2 class="card-title">Contact Details</h2>
+          <p>
+            <ul>
+              <li> <a href="https://github.com/TamannaaSinghh"> GitHub Link!</a></li>
+              <li> <a href="https://www.linkedin.com/in/tamanna-singh-760792284/"> LinkedIn Link!</a></li>
+              <li> <a href="https://www.instagram.com/tamannaa.singhh/"> Instagram Link!</a></li>
+            </ul>
+          </p>
+        </div>
+    
+      </div>
+      <footer>
+        <p>Karm. Sabr. Moksha.</p>
+      </footer> 
+</body>
+</html>
