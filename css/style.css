@@ -1,0 +1,97 @@
+/* Navbar CSS - already attached seperately. */
+
+
+/* Carousel CSS */
+
+.carousel-inner {
+    height: 400px;
+
+}
+
+.carousel-inner img {
+    height: 400px;
+}
+
+.container1 {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.carousel-inner:hover {
+    background-color: none;
+}
+
+.container {
+    display: flex; /* Clear float */
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div{
+    width: 50vw;
+}
+
+.right-img {
+    float: right;
+    width: 50%; 
+    padding-left: 20px; 
+    margin-bottom: 20px; 
+    
+} 
+
+.right-img, .left-img {
+    flex: 2;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.left-img {
+    float: left;
+    width: 50%; /*Adjust width as needed */
+    padding-right: 20px; /* Add padding for space between the columns */
+    margin-bottom: 20px;
+}
+
+.right-img img, .left-img img {
+    display: block;
+    width: 30%;
+    margin-bottom: 10px;
+    float: inline-start;
+    margin-right: 10px;
+    border-radius: 10px;
+    
+}
+
+.TechStackContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.aboutContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+/* Clearfix to prevent container from collapsing */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container h2{
+    text-decoration: underline;
+    color: #050C9C;
+}
+
+.container p{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Footer CSS - Already Added */

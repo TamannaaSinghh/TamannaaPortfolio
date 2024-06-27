@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Public Speaking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel ="stylesheet" href="./css/footer.css">
 </head>
 <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -53,6 +58,30 @@
         }
 </style>
 <body>
+   <!-- navbar -->
+
+   <nav class="navbar">
+    <div class="logo">
+        <img src="./images/6.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="./websites.html">Website Designing</a>
+                <a href="./publicSpeaking.html">Public Speaking</a>
+                <a href="./tutoring.html">Academic Tutoring</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li><a href="./contactMe.html">Contact Me</a></li>
+    </ul>
+</nav>
+
+
      <!-- Anchoring Profile Section -->
 <div class="container">
      <div class="profile-section">
@@ -113,5 +142,23 @@
         <p> These are few glimpses from some of my events, contact me to get to know me more.</p>
     </div>
 </div>
+
+<footer>
+    <div class="footer-content">
+        <div class="social-media">
+            <h4>Follow Me</h4>
+            <a href="https://www.linkedin.com/in/tamanna-singh-760792284/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/TamannaaSinghh" target="_blank">GitHub</a> |
+            <a href="https://x.com/tamannaasinghh" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/tamannaa.singhh/" target="_blank">Instagram</a>
+            
+        </div>
+ 
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Tamanna. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>

@@ -7,11 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel ="stylesheet" href="./css/footer.css">
 </head>
 <style>
     body {
   font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
+  /* margin: 50px 50px 0 50px; */
+  margin: 0;
   background-color: #faf9f6;
   display: flex;
   flex-direction: column;
@@ -23,11 +26,13 @@
 
 h1 {
   font-size: 5rem;
+  margin-left: 50px;
 }
 
 footer {
   text-align: right;
-  color: midnightblue;
+  color: white;
+  margin: 0;
 }
 
 .card {
@@ -36,10 +41,13 @@ footer {
 
 .left {
   float: left;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .right {
   float: right;
+  margin-bottom: 30px;
 }
 
 .tile-image {
@@ -54,6 +62,8 @@ footer {
 .main .logo{
   height: 200px;
 }
+
+
 @media(max-width: 680px){
   .logo{
     width: 200px;
@@ -80,8 +90,30 @@ footer {
 }
 </style>
 <body>
+
+  <nav class="navbar">
+    <div class="logo">
+        <img src="./images/6.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="./websites.html">Website Designing</a>
+                <a href="./publicSpeaking.html">Public Speaking</a>
+                <a href="./tutoring.html">Academic Tutoring</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li><a href="./contactMe.html">Contact Me</a></li>
+    </ul>
+</nav>
+
     <div class="main">
-        <img class="logo" src="./images/my logo.png" alt="logo">
+        
         <h1>I am <span class="tamanna">Tamanna Singh</span>,<br> a B.Tech Student!</h1>
         <div class="left card"><img class="tile-image" src="./images/tamz1.jpeg" alt="my pic">
           <h2 class="card-title">Education</h2>
@@ -98,11 +130,29 @@ footer {
               <li> <a href="https://www.instagram.com/tamannaa.singhh/"> Instagram Link!</a></li>
             </ul>
           </p>
+          
         </div>
     
       </div>
-      <footer>
-        <p>Karm. Sabr. Moksha.</p>
-      </footer> 
+      
+        
+        <footer>
+         
+          <div class="footer-content">
+              <div class="social-media">
+                  <h4>Follow Me</h4>
+                  <a href="https://www.linkedin.com/in/tamanna-singh-760792284/" target="_blank">LinkedIn</a> |
+                  <a href="https://github.com/TamannaaSinghh" target="_blank">GitHub</a> |
+                  <a href="https://x.com/tamannaasinghh" target="_blank">Twitter</a> |
+                  <a href="https://www.instagram.com/tamannaa.singhh/" target="_blank">Instagram</a>
+                  
+              </div>
+       
+          </div>
+          <div class="footer-bottom">
+              <p>© 2024 Tamanna. All rights reserved.</p>
+          </div>
+      </footer>
+       
 </body>
 </html>

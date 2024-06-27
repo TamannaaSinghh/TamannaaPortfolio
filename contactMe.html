@@ -4,40 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel ="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 <style>
-    body{
-        background-color: #EEEEEE;
+    h2{
         
     }
-    h1{
-        color: #DC5F00;
-    }
-    h2{
-        color: #373A40;
-    }
-    p{
-        color: #686D76;
-    }
-    img{
-        border-radius: 10%;
-    }
+
+
+    
 </style>
 <body>
-    <h1>My Contact Details</h1>
-    <h3>My address:</h3>
-    <p>
-        New Delhi, India 
-    </p>
-    <h3>Phone No:</h3>
-    <p>+91-9958102880</p>
-    <h3>My Email:</h3>
-    <p>singhtamannaa21@gmail.com</p>
-    <h3>LinkedIn Profile:</h3>
-    <a href="https://www.linkedin.com/in/tamanna-singh-760792284/"> LinkedIn Account</a>
+
+  <!-- navbar -->
+
+  <nav class="navbar">
+    <div class="logo">
+        <img src="./images/6.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="./websites.html">Website Designing</a>
+                <a href="./publicSpeaking.html">Public Speaking</a>
+                <a href="./tutoring.html">Academic Tutoring</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li><a href="./contactMe.html">Contact Me</a></li>
+    </ul>
+</nav>
+
+
+<div class="contact-form-container">
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact</label>
+            <input type="tel" id="contact" name="contact" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="linkedin">LinkedIn Profile</label>
+            <input type="url" id="linkedin" name="linkedin" required>
+        </div>
+        <button class="submit-button">Submit</button>
+    </form>
+</div>
 
 <br>
-<p>See yaa guys</p>
-<img src="./images/contact pic.jpeg" height="200">
+
+
+<footer>
+    <div class="footer-content">
+        <div class="social-media">
+            <h4>Follow Me</h4>
+            <a href="https://www.linkedin.com/in/tamanna-singh-760792284/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/TamannaaSinghh" target="_blank">GitHub</a> |
+            <a href="https://x.com/tamannaasinghh" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/tamannaa.singhh/" target="_blank">Instagram</a>
+            
+        </div>
+ 
+    </div>
+    <div class="footer-bottom">
+        <p> © 2024 Tamanna. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,39 @@
+
+footer {
+    background: linear-gradient(300deg, #A7E6FF, #050C9C, #3572EF);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.footer-content div {
+    margin: 10px 0;
+}
+.footer-content h4 {
+    margin-bottom: 10px;
+}
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+h4{
+    text-align: center;
+}
