@@ -1,9 +1,5 @@
-#!/bin/bash
 
-# Create a README.md file with content for your personal profile website
-
-cat <<EOL > README.md
-# My Personal Profile Website
+## My Personal Profile Website
 
 This is my personal profile website built using HTML and CSS. The website is designed to be responsive, ensuring an optimal viewing experience across various devices, including desktops, tablets, and mobile phones.
 
@@ -22,3 +18,4 @@ To view the website locally, clone this repository and open \`index.html\` in yo
 git clone https://github.com/TamannaaSinghh/TamannaaPortfolio.git
 cd TamannaaPortfolio
 open index.html
+```
